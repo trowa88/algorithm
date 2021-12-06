@@ -24,7 +24,7 @@ public class Main {
                 int right = list.size() - 1;
                 while (left < right) {
                     int mid = (left + right) / 2;
-                    if (list.get(mid) > i) {
+                    if (list.get(mid) >= i) {
                         right = mid;
                     } else {
                         left = mid + 1;
@@ -35,5 +35,4 @@ public class Main {
         }
         System.out.println(list.size() - 1);
     }
-
 }
